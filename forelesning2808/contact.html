@@ -29,6 +29,44 @@
       <section>
         <h2>Contact us!</h2>
       </section>
+      <section>
+        <h2>Make contact with us today</h2>
+        <form method="post">
+          <label for="Name">Name:</label>
+          <input type="text" name="Name" placeholder="George Washington.." id="Name" maxlength="30" required>
+          
+          <label>
+            E-post:
+            <input type="email" name="email" placeholder="brukernavn@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+          </label>
+          <label>
+            Subject:
+            <input type="text" name="Subject" placeholder="What is it about?">
+          </label>
+          <label>
+            Message:
+            <textarea name="Message" required></textarea>
+          </label>
+          <label>
+             <input type="radio" name="choice">
+             Ja
+          </label>
+          <label>
+            <input type="radio" name="choice">
+            Nei
+          </label>
+          <input type="submit" value="Send a message">
+          <label>
+            Favorite food
+            <select name="fav">
+              <option value="Pizza">Pizza</option>
+              <option value="Taco">Taco</option>
+              <option value="GRANDIS">Grandiosa</option>
+              <option value="Tzasiki">Tzasiki</option>
+            </select>
+          </label>
+        </form>
+      </section>
     </main>
     <footer>2024 KEVIN</footer>
   </body>
