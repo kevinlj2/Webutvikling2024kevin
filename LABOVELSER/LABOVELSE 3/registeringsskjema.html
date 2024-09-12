@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registreringsskjema</title>
+    </head>
+    <body>
+        <header id="topp">
+        <a href="index.html"><h1>Forside</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="validering.html">Valideringsoppgave</a></li>
+                    <li><a href="mal.html">Mal</a></li>
+                    <li><a href="contact.html">Kontakt oss</a></li>
+                    <li><a href="#bunn">Snarvei til bunn</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Registeringsskjema</h2>
+                <form>
+                    <label for="name">Navn:
+                        <input type="text" name="Name" placeholder="Alex Rosen.." id="name" maxlength="30" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                    </label>
+                    <label for="email">E-mail:
+                        <input type="email" name="email" placeholder="username@hiof.no" id="email" required>
+                    </label>
+                    <label for="password">Password:
+                        <input type="password" name="password" placeholder="*****" id="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </label>
+                    <label for="age">Alder:
+                        <input type="number" id="age" name="age" min="18" max="99" required>
+                    </label>
+                    <label for="telefon">Telefon:
+                        <input type="text" id="telefon" pattern="[0-9]{8,12}" required>
+                    </label>
+                    <label for="birthdate">Fødelsdato:
+                        <input type="date" id="birthdate" max="2023-12-31" required>
+                    </label>
+                    <label for="gender">Kjønn:
+                        <input type="radio" id="gender" name="genderchoice">
+                        Mann
+                    </label>
+                    <label>
+                        <input type="radio" name="genderchoice">
+                        Kvinne
+                    </label>
+                    <label>
+                        <input type="radio" name="genderchoice">
+                        Annet
+                    </label>
+                    <label>Land:
+                        <select name="country" required>
+                            <option value="">Velg ett land</option>
+                            <option value="norway">Norge</option>
+                            <option value="sweden">Sverige</option>
+                            <option value="denmark">Danmark</option>
+                        </select>
+                    </label>
+                    <label for="privacy">Jeg har lest og forstått spørsmålene og jeg sender inn skjemaet.
+                        <input type="checkbox" id="privacy" required>
+                    </label>
+                    <label for="submit">
+                        <input type="submit" id="submit" value="Send inn skjemaet ditt">
+                    </label>
+                </form>
+            </section>
+         </main>
+         <footer id="bunn">
+            2024 Kevin Johannesen; kevinlj@hiof.no
+        </footer>
+    </body>
+</html>
