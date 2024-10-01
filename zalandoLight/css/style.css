@@ -1,3 +1,10 @@
+html {
+        font-size: 18px;
+}
+
+* {
+        box-sizing: border-box;
+}
 body {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
@@ -41,6 +48,14 @@ img {
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 1rem;
+
+        h2{
+                width: 100%;
+        }
+
+        form{
+                position: relative;
+        }
       }
 
 .flexspacebetween form label {
@@ -51,3 +66,13 @@ img {
 #outlet {
         color: #ff0000;
 }
+
+.product-card {
+        max-width: 350px; /* Maksimal bredde for produktkortet er 350px */
+        min-width: 200px; /* Minimum bredde for produktkortet er 200px */
+        width: 100%; /* Produktkortet tar opp 100% av sin container */
+        box-shadow: 13px 9px 20px 0px #efefef; /* Legger til en boks-skygge for dybdeeffekt */
+        border-radius: 4px; /* Avrunder hjørnene på produktkortet med 4px */
+        padding: 1rem; /* Legger til 1rem padding på innsiden av produktkortet */
+    }
+    
