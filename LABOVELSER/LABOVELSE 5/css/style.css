@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-image: url('../img/headerbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-transform: uppercase;
+    text-decoration: #ffffff;
+    padding: 45px;
+}
+
+.mainmenu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+    width: 100%;
+
+        a:hover{
+            background-color: yellow;
+        }
+}
+
+main {
+    width: 70%;
+}
+
+article {
+    box-shadow: 5px, 10px, #ffffff;
+}
+#studietabell td, th {
+    border: 1px solid #000;
+    padding: 1rem;
+    text-align: left;
+}
+
+aside {
+    background-color: #d3d3d3;
+    width: 30%;
+}
+
+footer {
+    width: 100%;
+    color: #ffffff;
+    background-color: #000;
+    height: 40px;
+    text-align: center;
+}
