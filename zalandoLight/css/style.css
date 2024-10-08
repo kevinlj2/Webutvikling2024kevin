@@ -7,17 +7,73 @@ html {
 }
 body {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
+}
+
+#grid-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: auto auto auto; /* repeat (3,auto); */
+        row-gap: 1.5rem;
+}
+
+#global-header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        /* grid-column: 1 / 4;*/
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+        /* grid-row: 1 / 2; */
+}
+
+#banner {
+        display: flex;
+        flex-wrap: wrap;
+        
+        img {
+                max-width: 70%;
+        }
+}
+
+main {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+}
+
+main nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 1rem;
+
+        a{
+                color: #474747;
+        }
+}
+
+footer {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+}
+
+#category-menu {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+}
+
+#category-menu nav ul {
+        list-style: none;
 }
 
 img {
         width: 100%;
-        max-width: 700px;
+        max-width: 400px;
 }
 
 #mainlogo {
         width: 100%;  
-        max-width: 175px;
+        max-width: 250px;
         margin: 0px auto;
         display: block;
 }
@@ -67,11 +123,11 @@ img {
 }
 
 .product-card {
-        max-width: 350px; /* Maksimal bredde for produktkortet er 350px */
-        min-width: 200px; /* Minimum bredde for produktkortet er 200px */
-        width: 100%; /* Produktkortet tar opp 100% av sin container */
-        box-shadow: 13px 9px 20px 0px #efefef; /* Legger til en boks-skygge for dybdeeffekt */
-        border-radius: 4px; /* Avrunder hjørnene på produktkortet med 4px */
-        padding: 1rem; /* Legger til 1rem padding på innsiden av produktkortet */
+        max-width: 350px;
+        min-width: 200px;
+        width: 100%;
+        box-shadow: 13px 9px 20px 0px #efefef;
+        border-radius: 4px;
+        padding: 1rem;
     }
     
