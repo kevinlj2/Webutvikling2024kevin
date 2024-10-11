@@ -46,7 +46,7 @@ grid-row: 1/2;
 #natur, #science, #animal, #tech, #culture, #history, #geo, #food{
     padding:3rem;
     border-radius: 20px;
-    gap: 10px;
+    gap: 
 }
 
 #natur{
