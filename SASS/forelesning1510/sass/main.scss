@@ -1,8 +1,15 @@
-@use "layout.scss";
-@use "logginn.scss";
-@import "colors.scss";
+@use 'layout' as *;
+@use 'logginn' as *;
+@use 'colors' as *;
+@use 'fonts' as *;
 
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: $blue;
   height: 100vh;
+  font-family: $mainFont;
+  background-image: url("https://picsum.photos/200/300");
+  background-size: cover;
 }
